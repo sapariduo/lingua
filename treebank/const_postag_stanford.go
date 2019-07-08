@@ -1,0 +1,70 @@
+// +build stanfordtags
+
+package treebank
+
+import "github.com/sapariduo/lingua"
+
+var posTagTable map[string]lingua.POSTag = map[string]lingua.POSTag{
+	"X": lingua.X,
+
+	"CC":   lingua.CC,
+	"CD":   lingua.CD,
+	"DT":   lingua.DT,
+	"EX":   lingua.EX,
+	"FW":   lingua.FW,
+	"IN":   lingua.IN,
+	"JJ":   lingua.JJ,
+	"JJR":  lingua.JJR,
+	"JJS":  lingua.JJS,
+	"LS":   lingua.LS,
+	"MD":   lingua.MD,
+	"NN":   lingua.NN,
+	"NNS":  lingua.NNS,
+	"NNP":  lingua.NNP,
+	"NNPS": lingua.NNPS,
+	"PDT":  lingua.PDT,
+	"POS":  lingua.POS,
+	"PRP":  lingua.PRP,
+	"PPRP": lingua.PPRP,
+	"PRP$": lingua.PPRP,
+	"RB":   lingua.RB,
+	"RBR":  lingua.RBR,
+	"RBS":  lingua.RBS,
+	"RP":   lingua.RP,
+	"SYM":  lingua.SYM,
+	"TO":   lingua.TO,
+	"UH":   lingua.UH,
+	"VB":   lingua.VB,
+	"VBD":  lingua.VBD,
+	"VBG":  lingua.VBG,
+	"VBN":  lingua.VBN,
+	"VBP":  lingua.VBP,
+	"VBZ":  lingua.VBZ,
+	"WDT":  lingua.WDT,
+	"WP":   lingua.WP,
+	"PWP":  lingua.PWP,
+	"WP$":  lingua.PWP,
+	"WRB":  lingua.WRB,
+
+	// punctuation
+	",":     lingua.COMMA,
+	"``":    lingua.OPENQUOTE,
+	"''":    lingua.CLOSEQUOTE,
+	".":     lingua.FULLSTOP,
+	":":     lingua.COLON,
+	"$":     lingua.DOLLAR,
+	"#":     lingua.HASHSIGN,
+	"-LRB-": lingua.LEFTBRACE,
+	"-RRB-": lingua.RIGHTBRACE,
+
+	"ADD":  lingua.ADD,
+	"NFP":  lingua.NFP,
+	"HYPH": lingua.HYPH,
+	"GW":   lingua.GW,
+	"AFX":  lingua.AFX,
+	"XX":   lingua.XX,
+
+	"-NULL-":    lingua.X,
+	"-ROOT-":    lingua.ROOT_TAG,
+	"-UNKNOWN-": lingua.UNKNOWN_TAG,
+}
